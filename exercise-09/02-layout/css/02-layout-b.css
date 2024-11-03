@@ -1,0 +1,81 @@
+/* 02-layout-b.css */
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  grid-template: 
+  "masthead masthead  masthead" 
+  "navigation welcome welcome"
+  "navigation cats  comingsoon"
+  "copyright  copyright copyright";
+}
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+section {
+  background-color: #ddd;
+}
+
+main{
+  display: grid;
+  grid-gap: 20px;
+  grid-template: 
+  "welcome welcome"
+  "cats comingsoon";
+  grid-template-columns: 1fr 1fr;
+}
+
+header {
+  margin-top: 20px;
+  padding-left: 20px;
+  /* grid-column: 1 / -1; */
+  grid-area: masthead;
+}
+
+nav {
+  grid-area: navigation;
+  min-width: 400px;
+  /* grid-column: 1 / 2;
+  grid-row: 2 / 4; */
+}
+
+#welcome {
+  grid-area: welcome;
+  padding: 20px;
+  /* grid-row: 2 / 3;
+  grid-column: 2 / 4; */
+}
+
+#coming-soon {
+  grid-area: comingsoon;
+  padding: 20px;
+}
+
+#cats {
+  grid-area: cats;
+  padding: 20px;
+  /* grid-column: 2 / 3;
+  grid-row: 3; */
+}
+
+footer {
+  grid-area: copyright;
+  padding-left: 20px ;
+  /* grid-row: 4 / 5;
+  grid-column: 1 / -1; */
+}
+
+
+
+

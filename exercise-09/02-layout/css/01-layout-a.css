@@ -1,0 +1,49 @@
+/* 01-layout-a.css */
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 22px;
+  max-width: 960px;
+  margin: auto;
+  justify-content: center;
+  grid-template-areas: 
+  "masthead     masthead"
+  "navigation   welcome"
+  "navigation   copyright"
+}
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+section {
+  background-color: #ddd;
+}
+
+header {
+  grid-area: masthead;
+  margin-top: 20px;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+section {
+  grid-area: welcome;
+  padding: 20px;
+}
+
+footer {
+  grid-area: copyright;
+  padding-left: 20px;
+}
+
+header h1 {
+  padding: 0 20px 0 20px;
+}

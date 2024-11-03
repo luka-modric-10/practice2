@@ -1,0 +1,18 @@
+#box {
+  background-color: rgba(180,49,36,0.5);
+  /* add your properties here */
+
+  /* margin-top: 50px;
+  margin-left: 50px; */
+
+  /* margin: 50px 0 0 50px; */
+
+  /* border: 1px dashed #222; */
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+p {
+  margin: 0;
+}
