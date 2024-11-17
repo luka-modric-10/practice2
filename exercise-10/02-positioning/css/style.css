@@ -1,0 +1,43 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #222;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+main {
+  max-width: 500px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section h4,
+section p {
+  margin: 0;
+}
+
+section p {
+  position: relative;
+}
+
+p time{
+  position: absolute;
+  right: 0;
+}

@@ -27,3 +27,7 @@ figure {
     max-width: 350px;
     margin: auto;
 }
+
+body {
+    background-image: url(/Users/fatimakane/dance\ bg.jpg);
+}
